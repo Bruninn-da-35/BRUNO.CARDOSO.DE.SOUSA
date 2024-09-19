@@ -1,0 +1,52 @@
+/* CSSzin básico, não tem segredo! */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../clique.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.button-group {
+    position: absolute;
+    top: 37%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.caixa-texto {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: none; /* Oculto inicialmente antes de acionar os botões */
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 24px;
+    color: #eaff00;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    text-shadow: 
+    1px 1px 0 #000,  
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,  
+    -1px 1px 0 #000; /* maracutaia para adicionar uma "borda" preta ao redor do texto */
+}
